@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Subtitle Wizard</title>
+  <link rel="stylesheet" href="static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>🎬 Subtitle Wizard</h1>
+    <p>Upload your video and generate subtitles in seconds</p>
+  </header>
+
+  <main class="container">
+    <section class="upload-section">
+      <div id="videoBox" class="video-placeholder">
+        <label class="upload-btn">
+          Upload Video
+          <input type="file" id="videoInput" accept="video/*" />
+        </label>
+      </div>
+
+      <video id="videoPlayer" controls></video>
+
+      <button id="generateBtn">🎤 Generate Subtitles</button>
+      <a id="downloadLink" download="subtitles.srt">⬇️ Download Subtitles (.srt)</a>
+    </section>
+  </main>
+
+  <script src="static/script.js"></script>
+</body>
+</html>
