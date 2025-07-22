@@ -3,3 +3,4 @@ whisper
 torch
 ffmpeg-python
 srt
+indic-transliteration
