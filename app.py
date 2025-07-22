@@ -18,6 +18,7 @@ def upload():
     filename = f"{uuid.uuid4()}.mp4"
     video_path = os.path.join(UPLOAD_FOLDER, filename)
     file.save(video_path)
+    transcript = extract_audio_and_transcribe(video_path)
 
 if __name__ == "__main__":
     app.run(debug=True)
