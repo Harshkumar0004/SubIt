@@ -19,6 +19,7 @@ def upload():
     video_path = os.path.join(UPLOAD_FOLDER, filename)
     file.save(video_path)
     transcript = extract_audio_and_transcribe(video_path)
-
+    srt_path = generate_srt_file(transcript)
+    return send_file(srt_path, as_attachment=True)
 if __name__ == "__main__":
     app.run(debug=True)
