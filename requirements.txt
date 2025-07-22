@@ -1,0 +1,5 @@
+flask
+whisper
+torch
+ffmpeg-python
+srt
